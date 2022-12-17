@@ -1,0 +1,100 @@
+body{
+    background-color: aliceblue;
+}
+
+#location_name{
+    padding-left: 12px;
+    font-size: 1.55rem;
+    display: flex;
+}
+#location_name div:last-of-type {
+    margin-left: auto;
+    padding-right: 10px;
+    font-size: smaller;
+}
+
+
+#input_matrix{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.22rem;
+    color: rgb(11, 4, 4);
+    display: grid;
+    grid-template-rows: repeat(11,1fr);
+    grid-gap: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 11px;
+}
+#input_matrix div{
+    height: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    justify-content: center;
+    font-size: 1.01rem;
+    background-color: aqua;
+}
+
+/* #input_matrix div:nth-child(n+3){
+    background-color: blanchedalmond;
+    border-right: 2px rgb(15, 13, 13) solid;
+} */
+
+
+#input_matrix div div:nth-child(n+3){
+    background-color: blanchedalmond;
+    border-right: 2px #fcdad6 solid;
+}
+
+/* #input_matrix div:last-child{
+    border-right: none;
+}
+ */
+
+#input_matrix div div{
+    /* max-width: fit-content; */
+    /* width: 100px; */
+    font-size: 1.12rem;
+    display: flex;
+    align-items: center;
+}
+#input_matrix div div:last-child{
+    border-right: 0px salmon solid;
+}
+
+
+#input_matrix div div:hover{
+    /* cursor:cell; */
+    background-color: rgb(255, 226, 97);
+    color: rgb(8, 11, 11);
+}
+#input_matrix .cell0 ,#input_matrix .cell1{
+    background-color: rgb(255, 255, 177);
+    border-right: 1px solid black;
+}
+
+
+#setDataBtn{
+    cursor:pointer;
+    margin:  0 auto;
+    padding-top: 20px;
+    background-color: brown;
+    font-size: 1.22rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+    width: max-content;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6.22%;
+
+}
+
+#setDataBtn:hover{
+    background-color: rgb(245, 103, 103);
+    color: rgb(255, 247, 247);
+    border-radius: 5.22%;
+}
+
+
